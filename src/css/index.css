@@ -1,0 +1,1282 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  background: #000;
+  color: #fff;
+  font-family: aileron, sans-serif;
+  height: 100%;
+  line-height: 1.625;
+  margin: 0;
+  touch-action: manipulation;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #b87fd5;
+}
+a:hover {
+  color: #8743f2;
+}
+textarea,
+input,
+button {
+  background-color: white;
+  border: none;
+  border-radius: 0.625rem;
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: 0 0.375rem;
+  padding: 0.375rem 0.625rem 0.3125rem 0.625rem;
+  font-weight: 800;
+}
+@media (min-width: 500px) {
+  textarea,
+  input,
+  button {
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.5rem 0.75rem;
+  }
+}
+textarea:hover,
+input:hover,
+button:hover {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+button {
+  background-color: #2374ff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.0625rem;
+  width: 7rem;
+}
+button:hover {
+  background-color: #2356ff;
+}
+div#root {
+  text-align: center;
+}
+
+div.cookie p, div.cookie ul li, div.faq p, div.privacy-policy p, div.privacy-policy h4, div.tos p {
+  text-align: left;
+}
+
+a.help-drop {
+  display: block;
+  height: 3.75rem;
+  margin-top: -3.75rem;
+  visibility: hidden;
+}
+@media all and (min-width: 768px) {
+  a.help-drop {
+    height: 6.5rem;
+    margin-top: -6.5rem;
+  }
+}
+
+/* container max width */
+@media (min-width: 1500px) {
+      .container {
+          max-width: 1440px;
+      }
+}
+
+/* header */
+div.header nav.navbar {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.0));
+  padding: 0.125rem 0 2.0rem 0;
+}
+div.header nav.navbar a.navbar-brand,
+div.header nav.navbar a.nav-link {
+  color: #fff !important;
+  font-size: 1.125rem;
+  padding: 1rem;
+}
+div.header nav.navbar a.nav-link:hover {
+  color: #b87fd5 !important;
+}
+div.header nav.navbar a.navbar-brand {
+  background-image: url(/icons/automatonsai-logo-grad.svg);
+  background-size: 10.5rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+  cursor: pointer;
+  height: 3.5rem;
+  margin: 0.625rem 0 0 0;
+  overflow: hidden;
+  text-indent: -40rem;
+  width: 10.5rem;
+}
+div.header nav.navbar button.navbar-toggler {
+  margin: -0.75rem -1.0rem 0 0;
+  width: 5rem;
+}
+div.header nav.navbar button.navbar-toggler:hover {
+  background-color: transparent;
+}
+div.header nav.navbar button.navbar-toggler.collapsed span.navbar-toggler-icon {
+  background-image: url(/icons/automatonsai-menu.svg);
+}
+div.header nav.navbar button.navbar-toggler span.navbar-toggler-icon {
+  background-image: url(/icons/automatonsai-menu-close.svg);
+}
+div.header nav.navbar div.navbar-nav {
+  background: rgba(0,0,0,0.7);
+  border: 0.1875rem #7530e3 solid;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 0.625rem 1.25rem;
+}
+div.header nav.navbar div.navbar-nav > a {
+  height: auto;
+  line-height: 0.5rem;
+  margin: 1rem 1.5rem;
+  padding: 0;
+}
+div.header nav.navbar div.navbar-nav > a:last-child {
+  display: block;
+}
+div.header nav.navbar div.container-fluid > a:last-child {
+  border: 0.1875rem #7530e3 solid;
+  border-radius: 2rem;
+  display: none;
+  margin: -0.5rem 0.5rem 0;
+  padding: 0.5rem 1rem;
+}
+div.header nav.navbar div.container-fluid > a:last-child {
+  margin: -0.5rem 0 0 0;
+}
+div.header nav.navbar div.container-fluid > a:last-child {
+  background: #4b14a2;
+  color: #fff !important;
+}
+div.header nav.navbar div.container-fluid > a:nth-child(4):hover, div.header nav.navbar div.container-fluid > a:last-child:hover {
+  background: #280066;
+  color: #b87fd5 !important;
+}
+@media (min-width: 370px) {
+  div.header nav.navbar a.navbar-brand {
+    background-size: 12.5rem;
+    height: 3.5rem;
+    width: 12.5rem;
+  }
+}
+@media (min-width: 768px) {
+  div.header nav.navbar {
+    padding: 0.125rem 0 4.0rem 0;
+  }
+  div.header nav.navbar a.navbar-brand {
+    background-size: 20.0rem;
+    height: 5.0rem;
+    margin: 0.75rem 0 0 0.125rem;
+    width: 20.0rem;
+  }
+}
+@media (min-width: 992px) {
+  div.header nav.navbar a.navbar-brand {
+    margin: 0.75rem 0 0 0;
+  }
+  div.header nav.navbar div.navbar-nav {
+    border: 0.1875rem #7530e3 solid;
+    border-radius: 2.0rem;
+    margin: -0.5rem 0 0;
+    padding: 0 1.0rem;
+  }
+  div.header nav.navbar div.navbar-nav > a {
+    border: 0;
+    height: 3.0rem;
+    padding: 1.25rem 1.0rem;
+    color: #fff !important;
+    font-size: 1.0rem;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  div.header nav.navbar a.navbar-brand {
+    margin: 0.75rem 0 0 1.0rem;
+  }
+  div.header nav.navbar div.navbar-nav > a {
+    font-size: 1.125rem;
+  }
+  div.header nav.navbar div.container-fluid > a:last-child {
+    font-size: 1.125rem;
+    margin: -0.5rem 1rem 0;
+    padding: 0.5rem 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  div.header nav.navbar div.navbar-nav > a {
+    font-size: 1.125rem;
+  }
+  div.header nav.navbar div.navbar-nav > a, div.header nav.navbar div.container-fluid > a:last-child {
+    font-size: 1.25rem;
+  }
+}
+
+/* body */
+div#stacks div.body > div,
+div#stacks div.reflections,
+div#error-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div#root div#stacks div.reflections {
+  min-height: 20rem;
+}
+div#stacks h2 {
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 2.125rem;
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 1.25rem 1rem;
+}
+div#stacks h2 strong { 
+  font-weight: 700;
+}
+div#stacks h3 {
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+  margin: 2rem 0 1.25rem 0;
+}
+@media (min-width: 768px) {
+  div#stacks h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    padding: 3.0rem 1rem;
+  }
+}
+
+/* hero */
+div#stacks div.hero {
+  margin: 0;
+  min-height: 14.0rem;
+  overflow: hidden;
+  position: relative;
+}
+div#stacks div.hero video {
+  border-bottom: 0.0625rem #777 solid;
+}
+div#stacks div.hero img {
+  max-width: 120%;
+}
+div#stacks div.hero h1 {
+  font-size: 10.0vw;
+  font-weight: 300;
+  padding-bottom: 0;
+  position: absolute;
+  text-shadow: 0 0.25rem 2.5rem #000, 
+  0 0.25rem 2.5rem #000,
+  0 0.25rem 2.5rem #000,
+  0 0.25rem 2.5rem #000;
+  z-index: 2;
+}
+div#stacks div.hero a {
+  background: rgba(0,0,0,0.75);
+  border: 0.0625rem #777 solid;
+  border-radius: 2.0rem;
+  bottom: 1.0rem;
+  color: #fff;
+  font-size: 4.0vw;
+  font-weight: 300;
+  padding: 0.25rem 0.75rem 0.25rem 0.625rem;
+  position: absolute;
+  text-shadow: 0 0.25rem 2.5rem #000, 
+  0 0.25rem 2.5rem #000,
+  0 0.25rem 2.5rem #000,
+  0 0.25rem 2.5rem #000;
+  transition: .2s;
+  width: auto;
+  z-index: 3;
+}
+div#stacks div.hero a:hover {
+  color: #b87fd5;
+}
+div#stacks div.hero a svg {
+  height: 2.125rem;
+  padding: 0 0.375rem 0 0;
+  width: 2.125rem;
+}
+div#stacks div.hero a:hover svg circle {
+  fill: #7530e3;
+}
+@media (min-width: 576px) {
+  div#stacks div.hero a {
+    border-radius: 2.25rem;
+    bottom: 1.0rem;
+    font-size: 4.0vw;
+    padding: 0.0625rem 0.75rem 0.25rem 0.625rem;
+  }
+}
+@media (min-width: 768px) {
+  div#root div#stacks div.reflections {
+    min-height: 40rem;
+  }
+  div#stacks div.hero {
+    margin: 0;
+  }
+  div#stacks div.hero img {
+    max-width: 100%;
+  }
+  div#stacks div.hero h1 {
+    padding-bottom: 3%;
+    text-shadow: 0 0.25rem 1.0rem #000,
+    0 0.25rem 1.0rem #000;
+  }
+  div#stacks div.hero a {
+    border-radius: 2.5rem;
+    bottom: 3.0rem;
+    font-size: 3.5vw;
+    padding: 0 1.25rem 0.25rem 1.25rem;
+  }
+  div#stacks div.hero a svg {
+    height: 3.0rem;
+    padding: 0 0.5rem 0 0;
+    width: 3.0rem;
+  }
+}
+@media (min-width: 1200px) {
+  div#stacks div.hero {
+    border-bottom: 0.0625rem #777 solid;
+    height: 40rem !important;
+  }
+  div#stacks div.hero a {
+    border-radius: 3.5rem;
+    bottom: 5.0rem;
+    font-size: 2.5rem;
+    padding: 0.4375rem 1.75rem 0.3125rem 1.125rem;
+  }
+  div#stacks div.hero a svg {
+    height: 4.75rem;
+    padding: 0 0.75rem 0 0;
+    width: 4.75rem;
+  }
+}
+@media (min-width: 1920px) {
+  div#stacks div.hero {
+    height: 50rem !important;
+  }
+  div#stacks div.hero img {
+    display: none;
+  }
+  div#stacks div.hero a {
+    bottom: 4.0rem;
+  }
+  div#stacks div.hero a svg {
+    height: 5.75rem;
+    padding: 0 0.75rem 0 0;
+    width: 5.75rem;
+  }
+}
+
+/* about */
+div#stacks div.about {
+  align-items: flex-start !important;
+  padding: 0;
+  text-align: left;
+}
+div#stacks div.about div.about-vid {
+  margin: 0 auto 0.25rem auto;
+}
+div#stacks div.about div.about-vid > div {
+  position:relative;
+}
+div#stacks div.about div.about-vid > div button{
+  background: transparent;
+  border: 0.25rem #fff solid;
+  border-radius: 3.5rem;
+  bottom: 0;
+  height: 7.0rem;
+  left: 0;
+  margin: auto;
+  opacity: 0.7;
+  overflow: hidden;
+  position:absolute;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+  width: 7.0rem;
+  z-index: 100;
+}
+div#stacks div.about div.about-vid > div button:hover {
+  border: 0.25rem #c75aff solid;
+}
+div#stacks div.about div.about-vid > div button svg {
+  fill: #fff;
+  height: 6.25rem;
+  margin: -0.1875rem 0 0 -0.375rem;
+  transition: 0.2s;
+  width: 6.25rem;
+}
+div#stacks div.about div.about-vid > div button:hover svg {
+  fill: #c75aff;
+}
+div#stacks div.about div.about-vid > div video {
+  border: 0.0625rem #777 solid;
+  border-radius: 1.5rem;
+}
+div#stacks div.about div.about-insets {
+  background: 000;
+  border: 0.0625rem #777 solid;
+  border-radius: 1rem;
+  margin: 0 0 1rem 0;
+  padding: 1.5rem;
+}
+div#stacks div.about div.about-insets.about-insets-one {
+  background-image: url(/img/inset-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+div#stacks div.about div.about-insets.about-insets-five {
+  background-image: url(/img/inset-bg-flip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+div#stacks div.about div.about-insets p {
+  text-shadow: 0 0 0.125rem #000,
+  0 0 0.125rem #000;
+}
+div#stacks div.about div.about-insets p:first-child {
+  font-size: 2.0rem;
+  font-weight: 300;
+  line-height: 2.0rem;
+  margin: 0 !important;
+  padding: 1.0rem 0 0;
+}
+div#stacks div.about div.about-insets p:nth-child(2) {
+  color: #7530e3;
+  font-size: 1.375rem;
+  line-height: 2.0rem;
+  font-weight: 700;
+  padding: 0.75rem 0 0 0;
+}
+div#stacks div.about div.about-insets p:nth-child(3) {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+div#stacks div.about div.about-chat p a {
+    background-color: rgb(82, 51, 255);
+    border: 0.0625rem #777 solid;
+    border-radius: 1.5rem;
+    color: #fff;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 2.0rem 0.5rem;
+    text-align: center;
+    transition: .2s;
+    width: 100%;
+}
+div#stacks div.about div.about-chat p a:hover {
+    background-color: #7530e3;
+    color: #b87fd5;
+}
+div#stacks div.about div.about-chat p a svg {
+    height: 2.5rem;
+    margin: 0 0.5rem 0 0;
+}
+div#stacks div.about div.about-chat p a svg circle {
+    fill: #000;
+}
+div#stacks div.about div.about-chat p a:hover svg circle {
+    fill: #000;
+}
+div#stacks div.automatonsai div.automatonsai-details {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+div#stacks div.automatonsai div.automatonsai-details p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+div#stacks div.automatonsai div.automatonsai-details > p {
+  padding: 0 0 2.0rem 0;
+}
+div#stacks div.automatonsai div.automatonsai-details > div.row > div > p.details-headline {
+  color: #7530e3;
+  font-size: 1.125rem;
+  line-height: 2.0rem;
+  font-weight: 700;
+  padding: 1.0rem 0 0.25rem 0;
+}
+div#stacks div.automatonsai div.automatonsai-details > div.row > div > p img {
+  border: .0625rem #777 solid;
+  border-radius: 1.0rem !important;
+  margin: 1.0rem 0 0.5rem 0;
+}
+div#stacks div.automatonsai div.tokens ul{
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  div#stacks div.about div.about-vid {
+    max-width:88%;
+  }
+  div#stacks div.about div.about-vid > div button{
+    border-radius: 5.0rem;
+    height: 10.0rem;
+    width: 10.0rem;
+  }
+  div#stacks div.about div.about-vid > div button svg {
+    height: 10rem;
+    margin: -0.5625rem 0 0 -0.6875rem;
+    width: 10rem;
+  }
+  div#stacks div.about {
+    padding: 0 4rem !important;
+  }
+  div#stacks div.about div.about-insets {
+    border-radius: 1.5rem;
+    margin: 0 0 1.5rem 0;
+    min-height: 20rem;
+  }
+  div#stacks div.about div.about-insets p:first-child {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+  div#stacks div.about div.about-insets p:nth-child(2) {
+    font-size: 1.75rem;
+    margin: 0 0 0.5rem 0;
+  }
+  div#stacks div.about div.about-insets p:nth-child(3) {
+    font-size: 1.25rem;
+  }
+  div#stacks div.about div.about-chat p a {
+    font-size: 1.5rem;
+    padding: 2.0rem;
+  }
+  div#stacks div.about div.about-chat p a svg {
+    height: 4.0rem;
+    margin: 0 0.75rem 0 0;
+  }
+  div#stacks div.automatonsai div.automatonsai-details {
+    border-radius: 1.5rem;
+    padding: 0 2rem 0 1rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-details p {
+    font-size: 1.25rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a svg {
+    height: 10.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-details > div.row > div > p.details-headline {
+    font-size: 1.75rem;
+    padding: 0;
+  }
+  div#stacks div.automatonsai div.automatonsai-details > div.row > div > p img {
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  div#stacks div.about div.about-chat p a {
+    font-size: 2.0rem;
+    padding: 3.0rem;
+  }
+}
+
+/* feedback */
+div#stacks div.feedback {
+  align-items: flex-start !important;
+  padding: 0;
+  text-align: left;
+}
+div#stacks div.feedback:last-of-type {
+  background: transparent url(/img/automatonsai-bg.jpg) no-repeat bottom right;
+  padding-bottom: 4.0rem !important;
+}
+div#stacks div.feedback div.feedback-insets {
+  background: rgba(0,0,0,.9);
+  border: 0.0625rem #777 solid;
+  border-radius: 1rem;
+  margin: 0 0 1rem 0;
+  padding: 0.75rem 1.5rem;
+}
+div#stacks div.feedback div.feedback-insets.feedback-insets-one {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+div#stacks div.feedback div.feedback-insets.feedback-insets-five {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+div#stacks div.feedback div.feedback-insets p {
+  text-shadow: 0 0 0.125rem #000,
+  0 0 0.125rem #000;
+}
+div#stacks div.feedback div.feedback-insets p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+div#stacks div.feedback div.feedback-insets p a {
+  color: #7530e3;
+}
+div#stacks div.feedback div.feedback-insets p a:hover {
+  color: #b87fd5;
+}
+div#stacks div.feedback div.feedback-insets p:first-child {
+  color: #7530e3;
+  font-size: 1.375rem;
+  line-height: 2.0rem;
+  font-weight: 700;
+  padding: 0.75rem 0 0 0;
+}
+/* feedback form */
+p.feedback-response {
+  background: rgba(0, 0, 0, .9);
+  border: 0.0625rem #777 solid;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  margin: 0 auto 4.0rem auto;
+  max-width: 60.0rem;
+  padding: 2rem;
+}
+div.feedback label {
+  display: block;
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0 0.75rem;
+  text-align: left;
+}
+div.feedback input, div.feedback textarea {
+  background-color: #222;
+  border: 0.0625rem #777 solid;
+  border-radius: 0.5rem;
+  color: #fff;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0.25rem 0 0.75rem 0;
+  padding: 0.5rem 1.0rem;
+  width: 100%;
+}
+div.feedback textarea {
+  height: 12.0rem;
+}
+div.feedback button {
+  background: #000 !important;
+  border: 0.1875rem #fff solid;
+  border-radius: 2.0rem;
+  display: block;
+  margin: 1.0rem auto;
+  padding: 0.625rem 1.25rem;
+}
+div.feedback button:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+@media (min-width: 768px) {
+  div#stacks div.feedback {
+    padding: 0 4rem !important;
+  }
+  div#stacks div.feedback h2 {
+    padding: 0 1rem 2rem 1rem;
+  }
+  div#stacks div.feedback div.feedback-insets {
+    border-radius: 1.5rem;
+  }
+  div#stacks div.feedback div.feedback-insets p {
+    font-size: 1.25rem;
+  }
+  div#stacks div.feedback div.feedback-insets p:first-child {
+    font-size: 1.75rem;
+    margin: 0 0 0.75rem 0;
+  }
+}
+@media (min-width: 992px) {
+  div#stacks div.feedback div.feedback-insets {
+    height: 38rem;
+  }
+}
+@media (min-width: 1200px) {
+  div#stacks div.feedback div.feedback-insets {
+    height: 24rem;
+  }
+  div#stacks div.feedback:last-of-type div.feedback-insets {
+    height: 28rem;
+  }
+  div#stacks div.feedback div.feedback-insets p {
+    font-size: 1.0rem;
+  }
+}
+@media (min-width: 1400px) {
+  div#stacks div.feedback div.feedback-insets {
+    height: 49rem;
+  }
+  div#stacks div.feedback div.feedback-insets p {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1600px) {
+  div#stacks div.feedback div.feedback-insets {
+    height: 40rem;
+  }
+}
+
+/* automatonsai */
+div#stacks div.automatonsai div.automatonsai-insets {
+  background-color: #7530E3;
+  background-image: url(/icons/automatonsai-mini-header.svg);
+  background-size: 0.0625rem 3rem;
+  background-repeat: repeat-x;
+  background-position: top center;
+  border: 0.0625rem #777 solid;
+  border-radius: 1rem;
+  margin: 0 0 1rem 0;
+  padding: 0.875rem 1.375rem;
+}
+div#stacks div.automatonsai div.automatonsai-insets p.insets-plus {
+  font-size: 225% !important;
+  margin: 1.5rem 0 0 !important;
+}
+div#stacks div.automatonsai div.automatonsai-insets.automatonsai-insets-tokenomics > div.row p{
+  border-bottom: 0.0625rem #b87fd5 solid;
+  margin: 0;
+  padding: 0.75rem 0 1.0rem 0;
+}
+div#stacks div.automatonsai div.automatonsai-insets.automatonsai-insets-tokenomics > div.row > div:last-child p{
+  border-bottom: 0;
+  padding: 0.75rem 0 0 0;
+}
+div#stacks div.automatonsai div.col-lg-6:nth-child(odd) div.automatonsai-insets {
+  background-color: rgba(117,48,227, 0.5);
+}
+div#stacks div.automatonsai div.col-lg-6:last-child div.automatonsai-insets {
+  padding: 0.875rem 1.0rem;
+}
+div#stacks div.automatonsai div.automatonsai-insets p a {
+  color: #fff;
+  display: block;
+  padding: 0.125rem 0 0;
+  transition: .2s;
+}
+div#stacks div.automatonsai div.automatonsai-insets p a:hover {
+  color: #b87fd5;
+}
+div#stacks div.automatonsai div.automatonsai-insets p a svg {
+  float: left;
+  height: 5.0rem;
+  margin: -1.0rem 0.25rem 0 0;
+  width: 3.75rem;
+}
+div#stacks div.automatonsai div.automatonsai-insets p:first-child {
+  font-weight: 700;
+}
+div#stacks div.automatonsai div.automatonsai-insets p:last-child {
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin: 1.5rem 0 0;
+}
+div#stacks div.automatonsai div.tokens {
+  width: 100%;
+}
+div#stacks div.automatonsai div.tokens div.automatonsai-insets {
+  background-color: #000;
+  padding: 0.875rem 0.5rem 0.875rem 1.375rem;
+}
+div#stacks div.automatonsai div.tokens ul {
+  width: 100%;
+}
+div#stacks div.automatonsai div.tokens ul {
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-inline-start: 0 !important;
+}
+div#stacks div.automatonsai div.tokens ul li {
+  display: inline-block;
+  height: 4rem;
+  margin: 0.5rem;
+  width: 4rem;
+}
+div#stacks div.automatonsai div.tokens ul li svg {
+  fill: #333;
+  width: 100%;
+  height: 100%;
+}
+div#stacks div.automatonsai div.tokens ul li a > svg {
+  fill: #B87FD5;
+  transition: .2s;
+}
+div#stacks div.automatonsai div.tokens ul li a:hover > svg {
+  fill: #7530E3;
+}
+div#stacks div.automatonsai div.tokens ul li {
+  height: 4.25rem;
+  margin: 0.5rem 0.125rem 0.5rem 0;
+  width: 4.25rem;
+}
+/* automatonsai contract */
+div#stacks div.automatonsai div.automatonsai-contract {
+  display: block;
+}
+div#stacks div.automatonsai div.automatonsai-contract ul li {
+  height: 100% !important;
+  margin: 0;
+  width: 100% !important;
+}
+div#stacks div.automatonsai div.automatonsai-contract ul li a {
+  color: #B87FD5;
+  display: block;
+  transition: .2s;
+}
+div#stacks div.automatonsai div.automatonsai-contract ul li a:hover {
+  color: #7530E3;
+}
+div#stacks div.automatonsai div.automatonsai-contract ul li a svg {
+  height: 8.0rem;
+}
+div#stacks div.automatonsai div.automatonsai-contract ul li a p {
+  font-size: 0.875rem;
+  padding: 1.0rem 0;
+  text-align: center;
+}
+@media (min-width: 390px) {
+  div#stacks div.automatonsai div.tokens ul li {
+    height: 5.875rem;
+    width: 5.875rem;
+  }
+}
+@media (min-width: 576px) {
+  div#stacks div.automatonsai div.tokens ul li {
+    height: 6.5rem;
+    margin: 0.75rem 1.25rem 0.75rem 0;
+    width: 6.55rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a svg {
+    height: 8.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract a p {
+    padding: 1.0rem 0;
+    text-align: center;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a svg {
+    height: 9.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a p {
+    font-size: 1.0rem;
+  }
+  div#stacks div.automatonsai div.col-lg-6:last-child div.automatonsai-insets {
+    padding: 0.875rem 3.0rem;
+  }
+}
+@media (min-width: 768px) {
+  div#stacks div.automatonsai {
+    padding: 0 4rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-insets {
+    border-radius: 1.5rem;
+    margin: 0 0 1.5rem 0;
+  }
+  div#stacks div.automatonsai div.automatonsai-insets p.insets-plus {
+    font-size: 225% !important;
+    margin: 1.5rem 0 0 !important;
+  }
+  div#stacks div.automatonsai div.tokens ul {
+    max-width: none;
+  }
+  div#stacks div.automatonsai div.tokens ul li {
+    height: 7rem;
+    margin: 1rem;
+    width: 7rem;
+  }
+  div#stacks div.automatonsai div.tokens div.automatonsai-insets {
+    padding: 0.875rem 1.375rem;
+  }
+  div#stacks div.automatonsai div.tokens ul li {
+    height: 7.0rem;
+    margin: 1.0rem 1.5rem 1.0rem 0;
+    width: 7.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a svg {
+    height: 10.0rem;
+  }
+}
+@media (min-width: 992px) {
+  div#stacks div.automatonsai div.automatonsai-insets {
+    height: 9rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-insets p.insets-plus {
+    font-size: 250% !important;
+    margin: 2.25rem 0 0 !important;
+  }
+  div#stacks div.automatonsai div.tokens div.automatonsai-insets {
+    height: 11rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-insets.automatonsai-insets-tokenomics > div.row p{
+    border-bottom: 0;
+    border-right: 0.0625rem #b87fd5 solid;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    margin: 0.5rem 0 0;
+    padding: 0;
+  }
+  div#stacks div.automatonsai div.automatonsai-insets.automatonsai-insets-tokenomics > div.row > div:last-child p{
+    border-right: 0;
+    padding: 0;
+  }
+  div#stacks div.automatonsai div.tokens ul{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  div#stacks div.automatonsai div.tokens div.automatonsai-insets {
+    height: 9rem;
+  }
+  div#stacks div.automatonsai div.tokens ul li {
+    height: 4.0rem;
+    margin: 0.375rem 0 0;
+    width: 4.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a svg {
+    height: 6.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a p {
+    font-size: 0.625rem;
+  }
+  div#stacks div.automatonsai div.col-lg-6:last-child div.automatonsai-insets {
+    padding: 0.875rem 2.0rem;
+  }
+}
+@media (min-width: 1200px) {
+  div#stacks div.automatonsai div.tokens div.automatonsai-insets {
+    height: 10rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-insets p.insets-plus {
+    font-size: 225% !important;
+    margin: 2.25rem 0 0 !important;
+  }
+  div#stacks div.automatonsai div.automatonsai-insets.automatonsai-insets-tokenomics > div.row p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  div#stacks div.automatonsai div.tokens ul li {
+    height: 5.0rem;
+    margin: 0.375rem 0 0;
+    width: 5.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a svg {
+    height: 7.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a p {
+    font-size: 0.75rem;
+  }
+  div#stacks div.automatonsai div.col-lg-6:last-child div.automatonsai-insets {
+    padding: 0.875rem 1.0rem;
+  }
+}
+@media (min-width: 1400px) {
+  div#stacks div.automatonsai div.tokens div.automatonsai-insets {
+    height: 11rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-insets p.insets-plus {
+    font-size: 275% !important;
+    margin: 2.375rem 0 0 !important;
+  }
+  div#stacks div.automatonsai div.automatonsai-insets.automatonsai-insets-tokenomics > div.row p{
+    font-size: 1.625rem;
+    line-height: 2.0rem;
+  }
+  div#stacks div.automatonsai div.tokens ul li {
+    height: 6.0rem;
+    margin: 0.5rem 0 0;
+    width: 6.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a svg {
+    height: 8.0rem;
+  }
+  div#stacks div.automatonsai div.automatonsai-contract ul li a p {
+    font-size: 1.0rem;
+  }
+}
+@media (min-width: 1600px) {
+  div#stacks div.automatonsai div.col-lg-6:last-child div.automatonsai-insets {
+    padding: 0.875rem 3.0rem;
+  }
+}
+
+/* reflections */
+
+div.reflections {
+  padding: 6.0rem 0 4.0rem 0;
+}
+
+div.reflections > div.container div.custom-card, div.reflections > div.container div.card {
+  background-color: #222;
+  border: 0.0625rem #777 solid;
+  border-radius: 1.5rem;
+  color: #fff;
+}
+
+div.reflections > div.container div.card div.root-title {
+  color: #fff;
+  font-family: aileron, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+
+div.reflections > div.container div.card h3.title-2 {
+  color: #fff;
+  font-family: aileron, sans-serif;
+  font-weight: 400;
+}
+
+div.reflections > div.container div.card button {
+  background: #000 !important;
+  border: 0.1875rem #fff solid;
+  border-radius: 2.0rem;
+  margin: 0;
+  padding: 0.625rem 1.25rem;
+}
+
+div.reflections > div.container div.card button:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+div.reflections > div.container div.card div.contentFooter button {
+  font-size: 1.25rem;
+}
+
+/* reflections */
+
+div.contact {
+  padding: 6.0rem 0 4.0rem 0;
+}
+
+p.contact-response {
+  font-size: 1.5rem;
+  padding: 9.0rem 0 6.0rem 0;
+}
+
+div.contact label {
+  display: block;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  text-align: left;
+}
+
+div.contact input, div.contact textarea {
+  background-color: #222;
+  border: 0.0625rem #777 solid;
+  border-radius: 1.5rem;
+  color: #fff;
+  display: block;
+  font-size: 1.25rem;
+  margin: 0.5rem 0 2.0rem 0;
+  padding: 0.5rem 1.0rem;
+  width: 100%;
+}
+
+div.contact textarea {
+  height: 12.0rem;
+}
+
+div.contact button {
+  background: #000 !important;
+  border: 0.1875rem #fff solid;
+  border-radius: 2.0rem;
+  display: block;
+  margin: 0 auto;
+  padding: 0.625rem 1.25rem;
+}
+
+div.contact button:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* footer */
+div.footer {
+  border-top: 0.0625rem #777 solid;
+  padding: 1rem 0 4rem 0;
+}
+div.footer p {
+  color: #ccc;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0;
+  text-align: left;
+}
+div.footer p a {
+  color: #777;
+}
+div.footer div.col:nth-child(2) > p a {
+  display: inline-block;
+  margin: 0.25rem 0;
+}
+div.footer div.col:nth-child(2) > p a:first-of-type {
+  margin: 0.5rem 0 0.25rem 0;
+}
+div.footer p a:hover {
+  color: #b87fd5;
+}
+div.footer a.footer-brand {
+  background-image: url(/icons/automatonsai-logo-white.svg);
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+  cursor: pointer;
+  display: block;
+  height: 3.5rem;
+  margin: 0;
+  overflow: hidden;
+  text-indent: -14rem;
+  width: 4rem;
+}
+a.automatonsai-icons {
+  display: inline-block;
+  height: 2.5rem;
+  margin: 0 1.5rem 0 -0.5rem;
+  width: 2.5rem;
+}
+a.automatonsai-icons svg {
+  height: 2.5rem;
+  fill: #777;
+  transition: 0.2s;
+  width: 3.5rem;
+}
+a.automatonsai-icons:hover svg {
+  fill: #b87fd5;
+}
+a.coingecko {
+  display: inline-block;
+  height: 3.625rem;
+  margin: 0;
+  width: 13.4375rem;
+}
+a.coingecko svg {
+  height: 3.625rem;
+  fill: #777;
+  transition: 0.2s;
+  width: 13.4375rem;
+}
+a.coingecko:hover svg {
+  fill: #b87fd5;
+}
+
+.custom-card {
+  border-radius: 18px;
+  background-color: #fff;
+  color: #1f2226;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-feature-settings: 'calt' off;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  box-sizing: inherit;
+}
+
+.contentFooter {
+  margin-top: auto;
+}
+
+.root2 {
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.amount {
+  margin-bottom: 8px;
+  /* max-width: 170px; */
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.usdAmount {
+  color: #9aa1b0;
+  font-weight: 500;
+  line-height: 1;
+  font-size: inherit;
+}
+
+.root-title {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1f2226;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+  color: #9aa1b0;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.title-2 {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.167;
+  color: #1f2226;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  div.footer {
+    padding: 2rem 0 4rem 0;
+  }
+  div.footer p {
+    font-size: 1rem;
+  }
+  a.automatonsai-icons {
+    margin: 0 1.0rem 0 0;
+  }
+  p.contact-response {
+    font-size: 2.0rem;
+    padding: 18.0rem 0 12.0rem 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  a.automatonsai-icons {
+    margin: 0 2.5rem 0 0;
+  }
+}
