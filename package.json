@@ -5,9 +5,7 @@
   "homepage": "https://automatonsai.com",
   "dependencies": {
     "@formspree/react": "^2.5.1",
-    "@web3modal/ethers5": "^4.1.9",
     "bootstrap": "^5.3.3",
-    "ethers": "^5.7.2",
     "gh-pages": "^6.2.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",

@@ -13,25 +13,25 @@ import Body, {
   loader as rootLoader,
 }  from "./routes/body";
 
-import Cookie, {
-  loader as cookieLoader,
-} from "./routes/cookie";
+// import Cookie, {
+//   loader as cookieLoader,
+// } from "./routes/cookie";
 
-import Faq, {
-  loader as faqLoader,
-} from "./routes/faq";
+// import Faq, {
+//   loader as faqLoader,
+// } from "./routes/faq";
 
-import Privacy, {
-  loader as privacyLoader,
-} from "./routes/privacy";
+// import Privacy, {
+//   loader as privacyLoader,
+// } from "./routes/privacy";
 
-import Tos, {
-  loader as tosLoader,
-} from "./routes/tos";
+// import Tos, {
+//   loader as tosLoader,
+// } from "./routes/tos";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/automatonsai/",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -43,26 +43,26 @@ const router = createBrowserRouter([
             element: <Body />, 
             loader: rootLoader,
           },
-          {
-            path: "/cookie",
-            element: <Cookie />,
-            loader: cookieLoader,
-          },
-          {
-            path: "/faq",
-            element: <Faq />,
-            loader: faqLoader,
-          },
-          {
-            path: "/privacy-policy",
-            element: <Privacy />,
-            loader: privacyLoader,
-          },
-          {
-            path: "/tos",
-            element: <Tos />,
-            loader: tosLoader,
-          },
+          // {
+          //   path: "/cookie",
+          //   element: <Cookie />,
+          //   loader: cookieLoader,
+          // },
+          // {
+          //   path: "/faq",
+          //   element: <Faq />,
+          //   loader: faqLoader,
+          // },
+          // {
+          //   path: "/privacy-policy",
+          //   element: <Privacy />,
+          //   loader: privacyLoader,
+          // },
+          // {
+          //   path: "/tos",
+          //   element: <Tos />,
+          //   loader: tosLoader,
+          // },
         ],
       },
     ],

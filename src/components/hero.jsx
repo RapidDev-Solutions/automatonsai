@@ -6,7 +6,7 @@ const Hero = () => {
         <>
             <div className='hero'>
                 <Ratio aspectRatio="16x9">
-                    <video width="1920" height="1080" autoPlay={true} loop={true} playsInline={true} muted={true} preload="none" poster="img/hero-bg.jpg">
+                    <video width="1920" height="1080" autoPlay={true} loop={true} playsInline={true} muted={true} preload="none" poster="/automatonsai/hero-bg.jpg">
                         <source src={ heroVid } type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>

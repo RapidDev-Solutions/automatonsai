@@ -111,7 +111,7 @@ div.header nav.navbar a.nav-link:hover {
   color: #b87fd5 !important;
 }
 div.header nav.navbar a.navbar-brand {
-  background-image: url(/icons/automatonsai-logo-grad.svg);
+  background-image: url(/automatonsai/icons/automatonsai-logo-grad.svg);
   background-size: 10.5rem;
   background-repeat: no-repeat;
   background-position: top center;
@@ -130,10 +130,10 @@ div.header nav.navbar button.navbar-toggler:hover {
   background-color: transparent;
 }
 div.header nav.navbar button.navbar-toggler.collapsed span.navbar-toggler-icon {
-  background-image: url(/icons/automatonsai-menu.svg);
+  background-image: url(/automatonsai/icons/automatonsai-menu.svg);
 }
 div.header nav.navbar button.navbar-toggler span.navbar-toggler-icon {
-  background-image: url(/icons/automatonsai-menu-close.svg);
+  background-image: url(/automatonsai/icons/automatonsai-menu-close.svg);
 }
 div.header nav.navbar div.navbar-nav {
   background: rgba(0,0,0,0.7);
@@ -440,13 +440,13 @@ div#stacks div.about div.about-insets {
   padding: 1.5rem;
 }
 div#stacks div.about div.about-insets.about-insets-one {
-  background-image: url(/img/inset-bg.jpg);
+  background-image: url(/automatonsai/img/inset-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top left;
 }
 div#stacks div.about div.about-insets.about-insets-five {
-  background-image: url(/img/inset-bg-flip.jpg);
+  background-image: url(/automatonsai/img/inset-bg-flip.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
@@ -603,7 +603,7 @@ div#stacks div.feedback {
   text-align: left;
 }
 div#stacks div.feedback:last-of-type {
-  background: transparent url(/img/automatonsai-bg.jpg) no-repeat bottom right;
+  background: transparent url(/automatonsai/img/automatonsai-bg.jpg) no-repeat bottom right;
   padding-bottom: 4.0rem !important;
 }
 div#stacks div.feedback div.feedback-insets {
@@ -738,7 +738,7 @@ div.feedback button:hover {
 /* automatonsai */
 div#stacks div.automatonsai div.automatonsai-insets {
   background-color: #7530E3;
-  background-image: url(/icons/automatonsai-mini-header.svg);
+  background-image: url(/automatonsai/icons/automatonsai-mini-header.svg);
   background-size: 0.0625rem 3rem;
   background-repeat: repeat-x;
   background-position: top center;
@@ -1134,7 +1134,7 @@ div.footer p a:hover {
   color: #b87fd5;
 }
 div.footer a.footer-brand {
-  background-image: url(/icons/automatonsai-logo-white.svg);
+  background-image: url(/automatonsai/icons/automatonsai-logo-white.svg);
   background-size: 4rem;
   background-repeat: no-repeat;
   background-position: top center;

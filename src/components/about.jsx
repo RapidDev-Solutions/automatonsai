@@ -40,11 +40,11 @@ const About = () => {
                     <Col sm={12} className="mb-3 mb-md-4 about-vid">
                         <div>
                             <Button variant="primary" onClick={playPause} className={playVid ? 'd-none' : 'd-block'}>
-                                <svg className="d-block d-md-none"><use xlinkHref="/icons/automatonsai-icons.svg#litlPlay"></use></svg>
-                                <svg className="d-none d-md-block"><use xlinkHref="/icons/automatonsai-icons.svg#bigPlay"></use></svg>
+                                <svg className="d-block d-md-none"><use xlinkHref="/automatonsai/icons/automatonsai-icons.svg#litlPlay"></use></svg>
+                                <svg className="d-none d-md-block"><use xlinkHref="/automatonsai/icons/automatonsai-icons.svg#bigPlay"></use></svg>
                             </Button>
                             <Ratio aspectRatio="16x9">
-                                <video id="aboutVid" width="1920" height="1080" autoPlay={false} loop={false} playsInline={true} muted={false} preload="none" poster="img/about-vid-cover.jpg">
+                                <video id="aboutVid" width="1920" height="1080" autoPlay={false} loop={false} playsInline={true} muted={false} preload="none" poster="/automatonsai/img/about-vid-cover.jpg">
                                     <source src={ aboutVid } type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
