@@ -7,12 +7,12 @@ const Header = () => {
         <div className={`header`}>
             <Navbar collapseOnSelect expand="lg" className="fixed-top">
             <Container fluid>
-                <Navbar.Brand href="/#home">Automatons AI Home</Navbar.Brand>
+                <Navbar.Brand href="/automatonsai/#home">Automatons AI Home</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
                 <Nav>
                     <Nav.Link href="https://automatonsai.medium.com/" target="_blank">Blog</Nav.Link>
-                    <Nav.Link href="/#feedback">Feedback</Nav.Link>
+                    <Nav.Link href="/automatonsai/#feedback">Feedback</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
